@@ -436,9 +436,18 @@ t {
     text-align: center;
   }
 
+  .sectionsquirrels{
+    border-style: solid;
+    border-color: #ed3f23;
+    background-color: #fcfcfc;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .sectionbeavers{
     border-style: solid;
-    border-color: #ffb4e5;
+    border-color: #006ddf;
     background-color: #fcfcfc;
     width: 55%;
     margin-left: auto;
@@ -447,7 +456,7 @@ t {
 
   .sectioncubs{
     border-style: solid;
-    border-color: #ff912a;
+    border-color: #25b755;
     background-color: #fcfcfc;
     width: 55%;
     margin-left: auto;
@@ -455,7 +464,7 @@ t {
   }
   .sectionscouts{
     border-style: solid;
-    border-color: #003982;
+    border-color: #088486;
     background-color: #fcfcfc;
     width: 55%;
     margin-left: auto;
