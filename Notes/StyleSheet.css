@@ -1,0 +1,99 @@
+.parallax {
+  /* The image used */
+  background-image: url("https://2.bp.blogspot.com/-EZA9BoeA5m8/U3uwGZPmJ9I/AAAAAAAAGyE/VidwK8_rcJk/s1600/P1200548.JPG");
+
+  /* Set a specific height */
+  min-height: 750px;
+  
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+
+
+body {
+  margin:0px;
+}
+
+.colour-block {
+  background:#0A3786;
+  width:100%;
+  padding:7% 20% 10% 20%;
+  color:#F9A930;
+}
+.white-block {
+  background:#fff;
+  width:100%;
+  padding:7% 20% 10% 20%;
+  color:#0A3786;
+}
+h1 {
+  text-align:center;
+  font-size:80px;
+  font-family:'wire one', serif;
+  font-weight:normal;
+}
+p {
+  font-size:20px;
+  font-family:'Raleway', serif;
+}
+
+a {
+  font-family:'Raleway', serif;
+}
+
+h2 {
+  font-family:'Raleway', serif;
+}
+
+h3 {
+  font-family:'Raleway', serif;
+}
+
+h4 {
+  font-family:'Raleway', serif;
+}
+
+h5 {
+  font-family:'Raleway', serif;
+}
+
+h6 {
+  font-family:'Raleway', serif;
+}
+
+
+
+
+
+
+.skew-cc{
+  width:100%;
+  height:100px;
+  position:absolute;
+  left:0px;
+  background: linear-gradient(to right bottom, #0A3786 49%, #fff 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
+}
+
+
+.skew-c{
+  width:100%;
+  height:100px;
+  position:absolute;
+  left:0px;
+  background: linear-gradient(to left bottom, #fff 49%, #0A3786 50%);
+}
+
+
+<link href='https://fonts.googleapis.com/css?family=Wire+One|Raleway:300' rel='stylesheet' type='text/css'>
