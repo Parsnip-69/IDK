@@ -1,4 +1,3 @@
-
 p {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -6,35 +5,76 @@ p {
   margin-left: 30px;
 }
 
+
 a.dropdown-item {
   text-align: center;
   
 }
 
 .dropdown-item:hover, .dropdown-item:active{
-  font-size: large;
+  font-size: larger;
   background-color: #00a794;
-}
 
-
-body {
-  margin:0px;
 }
 
 
 .colour-block {
   background:#0A3786;
   width:100%;
-  padding:2.5% 20% 2.5% 20%;
+  padding: 7.5% 7.5% 5% 7.5%;
   padding-top: 100px;
   color:#F9A930;
 }
+
 .white-block {
   background:#fff;
   width:100%;
-  padding:5% 20% 5% 20%;
+  padding: 7.5% 7.5% 5% 7.5%;
   color:#0A3786;
 }
+
+@media only screen and (max-width: 1000px) {
+  .colour-block {
+    background:#0A3786;
+    width:100%;
+    padding: 10% 5% 5% 5%;
+    padding-top: 100px;
+    color:#F9A930;
+  }
+  
+  .white-block {
+    background: #fff;
+    width: 100%;
+    padding: 20% 5% 5% 5%; /* Adjusted padding for better mobile experience */
+    color: #0A3786;
+  }
+  
+}
+
+.google-map {
+  position: relative;
+  width: 75%;
+  padding-bottom: 45%; /* Adjusted aspect ratio for better mobile experience */
+  margin: 0 auto;
+}
+
+.google-map iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #ff912a;
+}
+
+@media only screen and (max-width: 600px) {
+  .google-map {
+      padding-bottom: 150%; /* Adjusted aspect ratio for smaller screens */
+  }
+}
+
+
+
+
+
 
 .red-block {
   background:#FF0000;
@@ -43,11 +83,18 @@ body {
   color:#030303;
 }
 
+.grey-block {
+  background: #f2f2f2;
+  width:100%;
+  padding:0.1% 0.2% 0.1% 0.2%;
+}
+
 .Footer_Grey_Block {
   background:#f2f2f2;
   width:100%;
   padding:0.1% 0.1% 0.1% 0.1%;
   color:#000;
+  border-top: 2px solid #000;
 }
 
 .Footer_Bordered_NB {
@@ -55,6 +102,7 @@ body {
   width:100%;
   padding:0.1% 0.1% 0.1% 0.1%;
   color:#000;
+  border-top: 2px solid #000;
 }
 
 .Footer_Bordered {
@@ -62,7 +110,6 @@ body {
   width:100%;
   padding:0.1% 0.1% 0.1% 0.1%;
   color:#000;
-  border-bottom: 2.5px solid #000;
 }
 
 .tborder-grey-block {
@@ -70,8 +117,8 @@ body {
   width:100%;
   padding:0.1% 0.1% 0.1% 0.1%;
   color:#000;
-  border-bottom: 2.5px solid #000;
-  border-top: 2.5px solid #000;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
 }
 
 
@@ -91,10 +138,8 @@ a {
   margin-right: auto;
 }
 
-a.nav-link:hover{
-  font-size: larger;
-  color: #fff;
-  font-weight: bold;
+h1 {
+  font-family:'Raleway', serif;
 }
 
 h2 {
@@ -111,9 +156,6 @@ h3 {
   font-weight: bold;
 }
 
-h1 {
-  font-family:'Raleway', serif;
-}
 
 h4 {
   font-family:'Raleway', serif;
@@ -127,18 +169,36 @@ h6 {
   font-family:'Raleway', serif;
 }
 
-ul {
+ul.navbar-nav {
   font-family:'Raleway', serif;
-  display: table;
-  margin: 0 auto;
 
   border-bottom:2.5px solid #fff;
 }
 
 
-ul:hover{
+ul.navbar-nav:hover{
   border-bottom:5px solid #fff;
 }
+
+
+a.nav-link:hover{
+  font-size: larger;
+  color: #fff;
+  font-weight: bold;
+}
+
+div.ntcenter {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  padding: 10px;
+}
+
+
+
 
 t {
   text-align:center; 
@@ -247,58 +307,7 @@ t {
   font-size:1.45em;
 }
 
-.colour-block {
-  background:#0A3786;
-  width:100%;
-  padding: 7.5% 7.5% 5% 7.5%;
-  padding-top: 100px;
-  color:#F9A930;
-}
 
-.white-block {
-  background:#fff;
-  width:100%;
-  padding: 7.5% 7.5% 5% 7.5%;
-  color:#0A3786;
-}
-
-@media only screen and (max-width: 1000px) {
-  .colour-block {
-    background:#0A3786;
-    width:100%;
-    padding: 10% 5% 5% 5%;
-    padding-top: 100px;
-    color:#F9A930;
-  }
-  
-  .white-block {
-    background: #fff;
-    width: 100%;
-    padding: 20% 5% 5% 5%; /* Adjusted padding for better mobile experience */
-    color: #0A3786;
-  }
-  
-}
-
-.google-map {
-  position: relative;
-  width: 75%;
-  padding-bottom: 45%; /* Adjusted aspect ratio for better mobile experience */
-  margin: 0 auto;
-}
-
-.google-map iframe {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 5px solid #ff912a;
-}
-
-@media only screen and (max-width: 600px) {
-  .google-map {
-      padding-bottom: 150%; /* Adjusted aspect ratio for smaller screens */
-  }
-}
 
 .icenter {
   display: block;
@@ -329,7 +338,7 @@ t {
   height: auto;
  }
  .beavers:hover {
-  border:5px solid #006ddf;
+  border:4.5px solid #006ddf;
  }
 
 .cubs {
@@ -339,7 +348,7 @@ t {
  }
 
  .cubs:hover {
-  border: 5px solid #23a950;
+  border: 4.5px solid #23a950;
  
  }
 
@@ -351,7 +360,7 @@ t {
  }
 
  .scouts:hover {
-  border: 5px solid #004851;
+  border: 4.5px solid #004851;
   
  }
 
@@ -388,32 +397,13 @@ t {
     margin-top: 26px;
   }
 
-  .titfcenter {
+  .footer-header-center {
     text-align: center;
     text-decoration: underline;
     font-weight: bold;
   }
 
 
-  .copyright{
-    margin-left: 63%;
-    font-size: 15px;
-  }
-  .Ofsize{
-    width: 35px;
-  }
-
-  .Ofsize:hover{
-    width: 65px;
-  }
-
-  .Ffsize{
-    width: 35px;
-  }
-  
-  .Ffsize:hover{
-    width: 65px;
-  }
 
   .Sfsize{
     width: 35px;
@@ -422,17 +412,7 @@ t {
     width: 65px;
   }
 
-  .SSfsize{
-    width: 35px;
-  }
-
-  .SSfsize:hover{
-    width: 65px;
-  }
-
-  .ssize{
-    width: 15%;
-  }
+  
 
   .colour-title{
     text-align:center; 
@@ -474,6 +454,15 @@ t {
   .sectioncenter {
     text-align: center;
   }
+  .marg{
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .explist {
+  font-size: 16px;
+  font-family:'Raleway', serif;
+  }
 
   .sectionsquirrels{
     border-style: solid;
@@ -510,6 +499,15 @@ t {
     margin-right: auto;
   }
 
+  .sectionexplorers{
+    border-style: solid;
+    border-color: #003982;
+    background-color: #fcfcfc;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .responsive-iframe-container {
     position: relative;
     padding-bottom: 45%; /* Adjust this value as needed for your desired aspect ratio */
@@ -538,9 +536,6 @@ t {
   }
   
 
-  .awaiting{
-    color: #fb6d6d;
-  }
 
 .BPbutn:link, .BPbutn:visited {
   background-color: #00a794;
@@ -621,12 +616,12 @@ t {
 }
   
 
-.placementpara {
+.badge-placement-imagelink-text {
   font-size: 12.5px;
   color: red;
 }
 
-.EFtext {
+.EasyFundrasing-LinkText {
   text-align: center;
   font-size: 15px;
 }
