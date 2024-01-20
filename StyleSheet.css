@@ -90,7 +90,7 @@ a.dropdown-item {
 }
 
 footer{
-  position: absolute;
+  position: fixed;
 }
 
 .Footer_Grey_Block {
