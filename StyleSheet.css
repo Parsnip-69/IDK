@@ -599,6 +599,7 @@ t {
 
 .row {
   display: flex;
+  position: absolute;
 }
 
 /* Create two equal columns that sits next to each other */
@@ -606,6 +607,7 @@ t {
   flex: 50%;
   padding: 10px;
   height: 300px; /* Should be removed. Only for demonstration */
+  position: absolute;
 }
 
 .centerhred{
