@@ -11,6 +11,15 @@ a.dropdown-item {
   
 }
 
+button{
+  background-color: #00a794;
+}
+
+button:hover{
+  background-color: pink;
+  width: 100px;
+}
+
 .dropdown-item:hover, .dropdown-item:active{
   font-size: larger;
   background-color: #00a794;
