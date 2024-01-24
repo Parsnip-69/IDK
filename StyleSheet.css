@@ -20,6 +20,8 @@ button:hover{
 
 }
 
+
+
 .dropdown-item:hover, .dropdown-item:active{
   font-size: larger;
   background-color: #00a794;
