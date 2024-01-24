@@ -17,7 +17,6 @@ button{
 
 button:hover{
   background-color: pink;
-  width: 100px;
 }
 
 .dropdown-item:hover, .dropdown-item:active{
@@ -205,6 +204,10 @@ div.ntcenter {
   left: 50%;
   transform: translateX(-50%); /* Center horizontally */
   padding: 10px;
+}
+
+div.ntcenter:hover{
+  width: 50px;
 }
 
 
