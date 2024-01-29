@@ -607,6 +607,10 @@ t {
   font-size: 20px;
 }
 
+.whitetext{
+  color: #fff;
+  font-size: xx-small;
+}
 .Sbutn:hover, .Sbutn:active {
   width: 100%;
   border:6px solid #fff;
