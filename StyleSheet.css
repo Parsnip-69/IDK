@@ -191,6 +191,10 @@ ul.navbar-nav:hover{
   border-bottom:5px solid #fff;
 }
 
+.squirrelbadge{
+  text-align: center;
+}
+
 
 a.nav-link:hover{
   font-size: larger;
