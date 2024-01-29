@@ -15,10 +15,10 @@ button{
   background-color: #00a794;
 }
 
-button:hover{
-  background-color: #0A3786; /* For browsers that do not support gradients */
+/*button:hover{
+  background-color: #0A3786; /* For browsers that do not support gradients 
   background-image: linear-gradient(to right, #F9A930 , #0A3786);
-}
+}*/
 
 
 
