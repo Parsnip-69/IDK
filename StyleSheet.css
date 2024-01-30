@@ -35,6 +35,15 @@ div.accordion-item{
   margin-right: auto;
 }
 
+.sections-button-border{
+  border: 3px solid #000;
+  width: 75%;
+  padding: 2.5%;
+} 
+
+.sections-button-border:hover{
+  border:5px solid firebrick;
+}
 
 .colour-block {
   background:#0A3786;
