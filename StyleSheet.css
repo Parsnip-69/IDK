@@ -665,3 +665,9 @@ t {
 
 
 
+
+a.dropdown-item.active{
+  border: 1px solid #000;
+  background: rgb(10,55,134);
+  background: linear-gradient(30deg, rgba(10,55,134,1) 20%, rgba(249,169,48,0.9444152661064426) 70%);
+}
