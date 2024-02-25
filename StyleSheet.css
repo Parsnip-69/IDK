@@ -38,11 +38,16 @@ div.accordion-item{
 .sections-button-border{
   border: 3px solid #000;
   width: 75%;
+  height: auto;
   padding: 2.5%;
 } 
 
 .sections-button-border:hover{
   border:5px solid firebrick;
+}
+
+.sections-button-border:active{
+  border:5px solid rgb(255, 255, 0);
 }
 
 .colour-block {
