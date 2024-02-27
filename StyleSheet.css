@@ -45,12 +45,36 @@ div.accordion-item{
   margin-right: auto;
 }
 
-.sections-button-border{
+.sections-button-border {
   border: 3px solid #000;
-  width: 75%;
-  height: auto;
+  width: auto;
+  height: 275px; /* Set a fixed height for all boxes */
   padding: 2.5%;
-} 
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden; /* Add overflow hidden to prevent text overflow */
+}
+
+.sections-button-border img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sections-button-border h4 {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) { /* Adjust as needed for smaller screens */
+  .sections-button-border {
+      width: 100%; /* Set width to 100% for smaller screens */
+      max-width: none; /* Remove maximum width */
+  }
+}
 
 .sections-button-border:hover{
   border:5px solid firebrick;
