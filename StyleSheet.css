@@ -1,10 +1,28 @@
 p {
-  margin-top: 15px;
+  margin-top: 7.5%;
   margin-bottom: 15px;
   margin-right: 5%;
   margin-left: 5%;
+  font-size: 20px;
+  font-family: 'Raleway', serif;
 }
 
+a {
+  font-family: 'Raleway', serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h4, h5, h6 {
+  font-family: 'Raleway', serif;
+}
+
+h2, h3 {
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Raleway', serif;
+  font-weight: bold;
+}
 
 a.dropdown-item {
   text-align: center;
@@ -15,17 +33,9 @@ button{
   background-color: #00a794;
 }
 
-/*button:hover{
-  background-color: #0A3786; /* For browsers that do not support gradients 
-  background-image: linear-gradient(to right, #F9A930 , #0A3786);
-}*/
-
-
-
 .dropdown-item:hover, .dropdown-item:active{
   font-size: larger;
   background-color: #00a794;
-
 }
 
 div.accordion-item{
@@ -159,48 +169,7 @@ div.accordion-item{
   text-align: center;
 }
 
-p {
-  font-size:20px;
-  font-family:'Raleway', serif;
 
-}
-
-a {
-  font-family:'Raleway', serif;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-h1 {
-  font-family:'Raleway', serif;
-}
-
-h2 {
-  text-align:center; 
-  text-decoration:underline; 
-  font-family:'Raleway', serif;  
-  font-weight: bold;
-}
-
-h3 {
-  text-align:center; 
-  text-decoration:underline; 
-  font-family:'Raleway', serif;  
-  font-weight: bold;
-}
-
-
-h4 {
-  font-family:'Raleway', serif;
-}
-
-h5 {
-  font-family:'Raleway', serif;
-}
-
-h6 {
-  font-family:'Raleway', serif;
-}
 
 ul.navbar-nav {
   font-family:'Raleway', serif;
@@ -455,8 +424,8 @@ div.ntcenter {
     font-family:'Raleway', serif;
     margin-top: 15px;
     margin-bottom: 15px;
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 5%;
+    margin-left: 5%;
   }
 
   .tbold {
@@ -656,4 +625,9 @@ div.ntcenter {
 .EasyFundrasing-LinkText {
   text-align: center;
   font-size: 15px;
+}
+
+.font{
+  font-family:'Raleway', serif;
+  text-align: center;
 }
