@@ -228,7 +228,13 @@ div.ntcenter {
 
 
 
-
+.yellow-block {
+  background:#ffe627;
+  width:100%;
+  color:#000;
+  padding-top: 1.5px;
+  padding-bottom: 1.5px;
+}
 
 .blue-block {
   background:#003982;
