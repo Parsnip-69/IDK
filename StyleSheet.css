@@ -24,6 +24,20 @@ h2, h3 {
   font-weight: bold;
 }
 
+figcaption{
+  font-family: 'Raleway', serif;
+  padding: 10px;
+  margin: 10px;
+}
+
+figure{
+  border: 1px solid black;
+}
+
+figure img{
+  padding-top: 20px;
+}
+
 a.dropdown-item {
   text-align: center;
   
@@ -553,14 +567,23 @@ div.ntcenter {
 
   div.scroll-container {
     background-color: #f7f7f7;
-    overflow: auto;
+    overflow-x: auto; /* Enable horizontal scrolling */
     white-space: nowrap;
     padding: 10px;
+    display: flex; /* Use flexbox for horizontal layout */
+  }
+  
+  div.scroll-container figure {
+    margin: 0; /* Remove default margin */
+    padding: 0 10px; /* Add padding between images */
+    flex: 0 0 auto; /* Allow flex items to shrink and grow, but not shrink below their content size */
+    text-align: center; /* Center the caption */
   }
   
   div.scroll-container img {
-    padding: 10px;
+    height: 350px;
   }
+  
   
 
 
@@ -630,14 +653,37 @@ div.ntcenter {
 
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 
-/* Create two equal columns that sits next to each other */
-.column {
-  flex: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
+
+.column {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Align items vertically (center) */
+  align-items: center; /* Align items horizontally (center) */
+}
+
+#photo {
+  height: 400px; /* Set a fixed height for the photo */
+  width: auto;
+  max-width: 100%; /* Resize the photo to fit within the column */
+}
+
+#pdf {
+  height: 400px; /* Set a fixed height for the PDF object */
+  width: 75%;
+  max-width: 100%; /* Resize the PDF object to fit within the column */
+}
+
 
 .centerhred{
   width: 250px;
