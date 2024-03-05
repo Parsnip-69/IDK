@@ -32,6 +32,8 @@ figcaption{
 
 figure{
   border: 1px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 figure img{
@@ -669,15 +671,14 @@ div.ntcenter {
 }
 
 #photo {
-  height: 400px; /* Set a fixed height for the photo */
-  width: auto;
-  max-width: 100%; /* Resize the photo to fit within the column */
+  width: 75%;
+  max-width: 97.5%; /* Resize the photo to fit within the column */
 }
 
 #pdf {
-  height: 400px; /* Set a fixed height for the PDF object */
   width: 75%;
-  max-width: 100%; /* Resize the PDF object to fit within the column */
+  max-width: 97.5%; /* Resize the PDF object to fit within the column */
+  height: 250px;
 }
 
 
