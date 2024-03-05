@@ -24,40 +24,58 @@
 
 
   <style>
-  .callout {
+ 
+.callout {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 75%; /* Adjusted to cover 75% of the screen */
-  }
-  
-  .callout-header {
-    padding: 25px 15px;
+    width: 90%; 
+    max-width: 350px;
+    z-index: 9999; 
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+
+.callout-header {
+    padding: 15px;
     background: #555;
-    font-size: 30px;
+    font-size: 24px; 
     color: white;
     text-align: center;
-  }
-  
-  .callout-container {
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+
+.callout-container {
     padding: 15px;
-    background-color: #ccc;
     color: black;
-  }
-  
-  .closebtn {
+}
+
+.closebtn {
     position: absolute;
     top: 5px;
-    right: 15px;
+    right: 10px;
     color: white;
-    font-size: 30px;
+    font-size: 24px; 
     cursor: pointer;
-  }
-  
-  .closebtn:hover {
+}
+
+.closebtn:hover {
     color: lightgrey;
-  }
+}
+
+@media screen and (min-width: 900px) {
+    .callout {
+        width: 55%; 
+        max-width: 85%;
+    }
+}
+
 
 
 
