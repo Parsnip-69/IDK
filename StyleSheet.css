@@ -49,6 +49,14 @@ button{
   background-color: #00a794;
 }
 
+.ExBut{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  font-size: larger;
+  padding: 1% 2% 1% 2%;
+}
+
 .dropdown-item:hover, .dropdown-item:active{
   font-size: larger;
   background-color: #00a794;
@@ -499,8 +507,9 @@ div.ntcenter {
   }
 
   .explist {
-  font-size: 16px;
-  font-family:'Raleway', serif;
+    font-size: 20px;
+    font-family: 'Raleway', serif;
+    margin-left: 5%;
   }
 
   .sectionsquirrels{
