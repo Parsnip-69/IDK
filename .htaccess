@@ -1,3 +1,4 @@
 RewriteEngine on
-RewriteCond %{HTTPS_REFERER} !^https://4theg.org.uk/.*$ [NC]
-RewriteRule .*\.(wav|swf|jpg|jpeg|gif|png|bmp|js|css)$ - [F,NC,L]
+RewriteCond %{HTTP_REFERER} !^$
+RewriteCond %{HTTP_REFERER} !^https?://(www\.)?4theg\.org\.uk/.*$ [NC]
+RewriteRule \.(wav|swf|jpg|jpeg|gif|png|bmp|js|css)$ - [NC,F,L]
