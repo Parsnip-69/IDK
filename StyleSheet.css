@@ -668,10 +668,7 @@ div.ntcenter {
   width:85%;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 
 .row {
   display: flex;
