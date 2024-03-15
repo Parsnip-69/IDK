@@ -573,12 +573,21 @@ div.ntcenter {
   }
 
 
-  div.scroll-container {
+  div.scroll-container{
     background-color: #f7f7f7;
     overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap;
-    padding: 10px;
+    
     display: flex; /* Use flexbox for horizontal layout */
+    margin: 10px;
+    
+  }
+
+  .scroll-container img{
+    border-top:2px solid #000;
+    border-bottom: 2px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    padding: 10px;
   }
   
   div.scroll-container figure {
