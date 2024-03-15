@@ -15,7 +15,31 @@
 
   <link rel="icon" type="image/x-icon" href="Pictures/Logo.png">
   
-<style>
+  <style>
+    body {
+      background-image: url('/Pictures/Explorers.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    
+    #mydiv {
+      position: absolute;
+      z-index: 9;
+      background-color: whitesmoke;
+      border: 4px solid #ff0000;
+      text-align: center;
+      width: 50%;
+    }
+
+  #mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: #2196F3;
+    color: #fff;
+    
+  }
 </style>
 </head>
 
@@ -84,43 +108,76 @@
   <h2>Young Leaders</h2>
 </div>
 
-<div class="pink-block">
-  <h4 class="colour-title">Being a 4th YL</h4>
-</div>
-<p>
-    Even after bidding farewell to a scout when they reach a certain age, there's an exciting opportunity for them to continue their journey with the 4th. This is by becoming Young Leaders.
-    <br><br>
-    Young leaders actively engage with a younger section, assisting in weekly meetings and fostering essential friendships. This role, closer in age to the young people than adult leaders, creates a unique and impactful bond, enriching the scouting experience.
-  </p>
-
-
-<div class="yellow-block">
-  <h4 class="colour-title">Explorer Units</h4>
+<!-- Draggable DIV -->
+<div id="mydiv">
+  <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+  <div id="mydivheader">Click here to move</div>
+  <h1 style="text-decoration: underline;">Redirect</h1>
+            <br>
+            <p>This page should have redirected you to the young leader's Website. if you are reading this message then unfortunately it hasnt redirected you properly. <br><br>The link to the young leader's website is <a href="https://yl.4theg.org.uk">here</a></p>
 </div>
 
-  <p>So, we encourage our young leaders to go to an Explorer Unit so they have time to spend with people their own age and have less responibities. This also means that they get to do activities that are catered to a older age range and get to join in as when they are at explorers. They are the leader's top priority as they are the young people in this instance.</p>
-  <br><br>
-  <p>So although, 4th East Grinstead doesn't have a dedciated Explorers Unit. Within the East Grinstead District, there are 3 units.</p>
-  <div class="explist">
-    <ul>
-      <li>Griffyn (East Grinstead)</li>
-      <li>Rowfant (Crawley Down)</li>
-      <li>Matterhorn (Copthorne)</li>
-    </ul>
-  </div>
-<br>
-<p style="color: red;">For more units and details, click the button below.</p>
-<br>
-  <a href="https://www.scouts.org.uk/groups/?loc=RH19%202HA&section=Explorer%20Scouts">
-    <button class="ExBut">Explorer Unit - Local Area</button>
-  </a>
-  <footer>
-    <br>
-    <br>
-    <div class="Footer_Grey_Block">
-      <img class="icenter" src ="Pictures/Necker.png" alt="Our Group's Necker" width="200">
-      <p class="tcenter">4th East Grinstead / Charity Number: <a href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/305851" target="_blank">305851</a> / May the 4th be with you</p>
-    </div>
-    </footer>
+<script>// Make the DIV element draggable:
+  dragElement(document.getElementById("mydiv"));
+  
+  function dragElement(elmnt) {
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    if (document.getElementById(elmnt.id + "header")) {
+      // if present, the header is where you move the DIV from:
+      document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+    } else {
+      // otherwise, move the DIV from anywhere inside the DIV:
+      elmnt.onmousedown = dragMouseDown;
+    }
+  
+    function dragMouseDown(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // get the mouse cursor position at startup:
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      document.onmouseup = closeDragElement;
+      // call a function whenever the cursor moves:
+      document.onmousemove = elementDrag;
+    }
+  
+    function elementDrag(e) {
+      e = e || window.event;
+      e.preventDefault();
+      // calculate the new cursor position:
+      pos1 = pos3 - e.clientX;
+      pos2 = pos4 - e.clientY;
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      // set the element's new position:
+      elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+      elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    }
+  
+    function closeDragElement() {
+      // stop moving when mouse button is released:
+      document.onmouseup = null;
+      document.onmousemove = null;
+    }
+
+    function elementDrag(e) {
+  e = e || window.event;
+  e.preventDefault();
+  // calculate the new cursor position:
+  pos1 = pos3 - e.clientX;
+  pos2 = pos4 - e.clientY;
+  pos3 = e.clientX;
+  pos4 = e.clientY;
+  // set the element's new position:
+  var newTop = elmnt.offsetTop - pos2;
+  var newLeft = elmnt.offsetLeft - pos1;
+  // Limit movement to within the viewport:
+  newTop = Math.min(Math.max(newTop, 0), window.innerHeight - elmnt.offsetHeight);
+  newLeft = Math.min(Math.max(newLeft, 0), window.innerWidth - elmnt.offsetWidth);
+  elmnt.style.top = newTop + "px";
+  elmnt.style.left = newLeft + "px";
+}
+
+  }</script>
 </body>
 </html>
