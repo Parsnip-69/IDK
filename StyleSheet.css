@@ -8,6 +8,11 @@ body {
 }
 
 
+embed{
+  pointer-events: none;
+}
+
+
 p {
   margin-top: 7.5%;
   margin-bottom: 15px;
