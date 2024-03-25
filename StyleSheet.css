@@ -591,7 +591,6 @@ div.ntcenter {
   div.scroll-container{
     background-color: #f7f7f7;
     overflow-x: auto; /* Enable horizontal scrolling */
-    
     display: flex; /* Use flexbox for horizontal layout */
     margin: 10px;
     
