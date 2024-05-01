@@ -5,6 +5,7 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  overflow-x: hidden;
 }
 
 
@@ -741,7 +742,7 @@ figcaption{
   text-align: center;
 }
 
-
+/*Nofication CSS*/
 .callout {
   position: fixed;
   top: 50%;
@@ -817,4 +818,38 @@ color: white;
 transform: translate(-50%,-50%);
 -ms-transform: translate(-50%,-50%);
 }
+
+.enlarge {
+  transition:transform 0.25s ease;
+}
+
+.enlarge:hover {
+  -webkit-transform:scale(1.1); /* or some other value */
+  transform:scale(1.1);
+}
+
+.fromright {
+  position: relative;
+  right: -100%;
+  opacity: 0;
+  transition: right 0.75s ease-out, opacity 0.75s ease-out;
+}
+
+.fromright.active {
+  right: 0;
+  opacity: 1;
+}
+
+.fromleft {
+  position: relative;
+  left: -100%;
+  opacity: 0;
+  transition: left 0.75s ease-out, opacity 0.75s ease-out;
+}
+
+.fromleft.active {
+  left: 0;
+  opacity: 1;
+}
+
 

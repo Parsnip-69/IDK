@@ -21,89 +21,6 @@
   })(window,document,'script','dataLayer','GTM-59K92VHQ');</script>
   <!-- End Google Tag Manager -->
 
-
-
-  <style>
- 
-.callout {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%; 
-    max-width: 350px;
-    z-index: 9999; 
-    background-color: #f9f9f9; 
-    border: 1px solid #ddd; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-
-.callout-header {
-    padding: 15px;
-    background: #555;
-    font-size: 24px; 
-    color: white;
-    text-align: center;
-    border-top-left-radius: 10px; 
-    border-top-right-radius: 10px; 
-}
-
-
-.callout-container {
-    padding: 15px;
-    color: black;
-}
-
-.closebtn {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    color: white;
-    font-size: 24px; 
-    cursor: pointer;
-}
-
-.closebtn:hover {
-    color: lightgrey;
-}
-
-@media screen and (min-width: 900px) {
-    .callout {
-        width: 55%; 
-        max-width: 85%;
-    }
-}
-
-
-
-
-
-  #overlay {
-  position: fixed;
-  display: none;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.85);
-  z-index: 2;
-  cursor: pointer;
-}
-
-#text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  font-size: 50px;
-  color: white;
-  transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-}
-  </style>
 </head>
 
 
@@ -119,10 +36,21 @@
       <div class="callout-header">May Fair Stall</div>
       <span class="closebtn" onclick="closeOverlay()">×</span>
       <div class="callout-container">
-          <p>On Monday 6<sup>th</sup> May, we will be running at stall at the East Grisntead Lion's annual May fair on the high street. We will be running various games. This is one of our fundraising activites that we do so that the group has money to run. <br><br>Please come down and have a go on the stall.</p>
+        <div class="container text-center">
+          <div class="row align-items-center">
+            <div class="col">
+              <img class="enlarge" src="/Pictures/Useful/May Fair.jpg" alt="" height="300px">
+            </div>
+            <div class="col">
+                <p>On Monday 6<sup>th</sup> May, we will be running a stall at the East Grisntead Lions annual May Fair on the High Street. <br><br>
+              This is one of the fundraising activties, we do each year so the group has money to run.<br><br>
+              We will be running various games - Please come along and have a go - you never know, you might win.</p>
+            </div>
       </div>
       </div>
       </div>
+      </div>
+  </div>
   </div>
  
 
@@ -212,7 +140,7 @@
 <p>Join us today and embark on a journey filled with fun, learning, and adventure. If you have any questions or want to get started, feel free to contact our Deputy Group Scout Leader: <a href="mailto:jake.sheeran@egscouts.org.uk">Jake Sheeran</a>. Let's explore, learn, and grow together!</p>
 </div>
 
-
+<div class="fromleft">
 <div class="degree-tl"></div>
 <div class="colour-block">
   <h2 class="hHead">What Makes the 4th Unique.</h2>
@@ -223,7 +151,7 @@ Experience a one-of-a-kind Scouting journey with the 4th East Grinstead! We do t
 </p>
 </div>
 <div class="degree-bl"></div>
-
+</div>
 
 <div class="white-block">
   <br>
@@ -251,42 +179,41 @@ Experience a one-of-a-kind Scouting journey with the 4th East Grinstead! We do t
     </div>
     
 </div>
-<div class="degree-tr"></div>
+<div class="fromright">
+  <div class="degree-tr"></div>
 
-<div class="colour-block">
-  <h2 class="hHead">Quick Links</h2>
-  <br>
-  <br>
-  
+  <div class="colour-block">
+    <h2 class="hHead">Quick Links</h2>
+    <br>
+    <br>
+    
 
 
 
-  <div class="container text-center">
-    <div class="row align-items-center">
-      <div class="col">
-        <div class="icenter">
-          <a href="https://yl.4theg.org.uk" class = "Sbutn">Young Leaders</a>
+    <div class="container text-center">
+      <div class="row align-items-center">
+        <div class="col">
+          <div class="icenter">
+            <a href="https://yl.4theg.org.uk" class = "Sbutn">Young Leaders</a>
+          </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="icenter">
-          <a href="/badges" class = "BPbutn">Badge Placement</a>
+        <div class="col">
+          <div class="icenter">
+            <a href="/badges" class = "BPbutn">Badge Placement</a>
+          </div>
         </div>
-      </div>
-      <div class="col">
-        <a href="/about-us" class = "AUbutn">About Us</a>
+        <div class="col">
+          <a href="/about-us" class = "AUbutn">About Us</a>
+        </div>
       </div>
     </div>
-  </div>
 </div>
 
 
 
 
-
-
-
 <div class="degree-br"></div>
+</div>
 <div class="white-block">
   <br>
   <br>
@@ -360,6 +287,40 @@ function closeOverlay() {
     document.getElementById("overlay").style.display = "none";
 
 }
+window.addEventListener('scroll', () => {
+  reveal('.fromleft');
+  reveal('.fromright');
+  updateScrollVariable();
+}, false);
+
+function reveal(className) {
+  var reveals = document.querySelectorAll(className);
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (className === '.fromleft') {
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    } else if (className === '.fromright') {
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+}
+
+function updateScrollVariable() {
+  document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+}
+
 </Script>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59K92VHQ"
