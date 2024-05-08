@@ -281,43 +281,35 @@ Experience a one-of-a-kind Scouting journey with the 4th East Grinstead! We do t
     document.getElementById("overlay").style.display = "block";
   }
 
-function closeOverlay() {
+  function closeOverlay() {
     document.getElementById("overlay").style.display = "none";
 
-}
-window.addEventListener('scroll', () => {
-  reveal('.fromleft');
-  reveal('.fromright');
-  updateScrollVariable();
-}, false);
-
-function reveal(className) {
-  var reveals = document.querySelectorAll(className);
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-
-    if (className === '.fromleft') {
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add('active');
-      } else {
-        reveals[i].classList.remove('active');
-      }
-    } else if (className === '.fromright') {
-      if (elementTop < windowHeight - elementVisible) {
-        reveals[i].classList.add('active');
-      } else {
-        reveals[i].classList.remove('active');
-      }
-    }
   }
-}
+        
+  function handleScroll() {
+    const elementsToAnimate = document.querySelectorAll('.fromleft, .fromright');
+    const windowHeight = window.innerHeight;
+    const elementVisible = 150;
 
-function updateScrollVariable() {
-  document.body.style.setProperty('--scroll', window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
-}
+    elementsToAnimate.forEach((element) => {
+        const elementTop = element.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - elementVisible && !element.classList.contains('active')) {
+            // If the element is within the visible part of the viewport
+            // and hasn't been animated yet, add the 'active' class
+            element.classList.add('active');
+        }
+    });
+
+  
+    if (document.querySelectorAll('.fromleft:not(.active), .fromright:not(.active)').length === 0) {
+        window.removeEventListener('scroll', handleScroll);
+      } 
+    }
+
+  handleScroll();
+  
+  window.addEventListener('scroll', handleScroll);
 
 </Script>
 <!-- Google Tag Manager (noscript) -->
