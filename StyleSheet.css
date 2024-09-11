@@ -197,7 +197,7 @@ div.accordion-item{
 
 
 .Footer_Grey_Block {
-  background:#f2f2f2;
+  /*background:#f2f2f2;*/
   width:100%;
   padding:0.1% 0.1% 0.1% 0.1%;
   color:#000;
@@ -205,7 +205,7 @@ div.accordion-item{
 }
 
 .Footer_Bordered_NB {
-  background:#f2f2f2;
+  /*background:#f2f2f2;*/
   width:100%;
   padding:0.1% 0.1% 0.1% 0.1%;
   color:#000;
@@ -213,7 +213,7 @@ div.accordion-item{
 }
 
 .Footer_Bordered {
-  background:#f2f2f2;
+  /*background:#f2f2f2;*/
   width:100%;
   padding:0.1% 0.1% 0.1% 0.1%;
   color:#000;
@@ -853,3 +853,10 @@ transform: translate(-50%,-50%);
 }
 
 
+footer{
+  border-top: solid 5px #000;
+}
+
+p.tcenter a{
+  color: violet;
+}
