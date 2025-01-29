@@ -1,3 +1,4 @@
+/*Google Map*/
 .google-map {
     position: relative;
     width: 75%;
@@ -21,4 +22,183 @@
 
 h2{
     text-align: center;
+}
+
+/*Buttons*/
+.BPbutn:link, .BPbutn:visited {
+    background-color: #00a794;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width:90%;
+    border-radius: 1vh;
+    border:4.5px solid #fff;
+    font-size: 20px;
+  }
+  
+  .BPbutn:hover, .BPbutn:active {
+    width: 100%;
+    border:6px solid #fff;
+  }
+  
+  .AUbutn:link, .AUbutn:visited {
+    background-color: #ffb4e5;
+    color: #565656;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width:90%;
+    border-radius: 1vh;
+    border:4.5px solid #fff;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
+  .AUbutn:hover, .AUbutn:active {
+    width: 100%;
+    border:6px solid #fff;
+  }
+  
+  .Sbutn:link, .Sbutn:visited {
+    background-color: #7413dc;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width:90%;
+    border-radius: 1vh;
+    border:4.5px solid #fff;
+    font-size: 20px;
+  }
+  .Sbutn:hover, .Sbutn:active {
+    width: 100%;
+    border:6px solid #fff;
+  }
+
+/*Page Divider*/
+
+.degree-bl{
+    width:100%;
+    height:100px;
+    left:0px;
+    background: linear-gradient(to right bottom, #0A3786 49%, #fff 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
+}
+  
+.degree-br {
+    width: 100%;
+    height: 100px;
+    left: 0;
+    background: linear-gradient(to left bottom, #0A3786 49%, #fff 50%),    linear-gradient(50deg, #ffffff 16px, #000 0);
+}
+  
+  
+.degree-tl{
+    width:100%;
+    height:100px;
+    left:0px;
+    background: linear-gradient(to left bottom, #fff 49%, #0A3786 50%);
+}
+  
+.degree-tr {
+    width: 100%;
+    height: 100px;
+    left: 0;
+    background: linear-gradient(to right bottom, #fff 49%, #0A3786 50%);
+}
+
+.colour-block {
+    background:#0A3786;
+    width:100%;
+    padding: 7.5% 7.5% 5% 7.5%;
+    padding-top: 100px;
+    color:#F9A930;
+}
+  
+.white-block {
+    background:#fff;
+    width:100%;
+    padding: 7.5% 7.5% 5% 7.5%;
+    color:#0A3786;
+}
+  
+@media only screen and (max-width: 1000px) {
+    .colour-block {
+      background:#0A3786;
+      width:100%;
+      padding: 10% 5% 5% 5%;
+      padding-top: 100px;
+      color:#F9A930;
+    }
+    
+    .white-block {
+      background: #fff;
+      width: 100%;
+      padding: 20% 5% 5% 5%; /* Adjusted padding for better mobile experience */
+      color: #0A3786;
+    }
+    
+}
+
+/*Javascript*/
+.fromright {
+  position: relative;
+  right: -100%;
+  opacity: 0;
+  transition: right 0.75s ease-out, opacity 0.75s ease-out;
+}
+
+.fromright.active {
+  right: 0;
+  opacity: 1;
+}
+
+.fromleft {
+  position: relative;
+  left: -100%;
+  opacity: 0;
+  transition: left 0.75s ease-out, opacity 0.75s ease-out;
+}
+
+.fromleft.active {
+  left: 0;
+  opacity: 1;
+}
+
+
+/*Section Buttons*/
+.beavers {
+  border:3px solid #006ddf;
+  width: 100%;
+  height: auto;
+  border-radius: 20vh;
+}
+
+.beavers:hover {
+  border: 5px solid #006ddf;
+}
+
+.cubs {
+  border: 3px solid #23a950;
+  width: 100%;
+  height: auto;
+  border-radius: 20vh;
+}
+
+ .cubs:hover {
+  border: 5px solid #23a950;
+}
+
+.scouts {
+  border: 3px solid #004851;
+  width: 100%;
+  height: auto;
+  border-radius: 20vh;
+}
+
+.scouts:hover {
+  border: 5px solid #004851;
 }

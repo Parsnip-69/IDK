@@ -10,6 +10,16 @@ body{
     background-color: #f5f5f5;
 }
 
+
+/**/
+p {
+    margin-top: 7.5%;
+    margin-bottom: 2.5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: x-large;
+
+}
 /* Navbar */
 ul.navbar-nav {
     border-bottom:2.5px solid #fff;
