@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block css %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/scouts.css')}}">
+{% endblock %}
+
+
+{% block content %}
+
+<div class="welcome-section">
+    <div class="content">
+            <h1>Peak inside the<br><span>Scout Troop</span></h1>
+            <p class="description"></p>
+            Welcome to our Scout Section, where adventure and personal growth converge!
+            Our scouts embark on a journey of a lifetime, discovering the world around them while developing
+            essential life skills. Every Friday, from 7:00 pm to 9:00 pm, our vibrant community gathers to create
+            memories that last a lifetime.
+            <br><br>
+            At the 4 th East Grinstead, we take pride in our unique Greenfield camping style. Our scouts not only
+            learn scouting values but also engage in hands-on experiences that foster teamwork and key life
+            skills like cooking. Our commitment to the outdoors empowers young minds to embrace challenges,
+            honing skills that extend beyond the scout hall. From knot-tying to astromony, our diverse program
+            ensures that every scout discovers their potential. Through exciting activities and projects, we instill
+            a sense of adventure, resilience, and camaraderie.
+            <br><br>
+            Join us at the 4 th East Grinstead and be part of a community where the spirit of scouting comes alive.
+            Embrace the outdoors, make lifelong friends, and equip yourself with the skills for a lifetime of
+            success. We can't wait to welcome you to our troop! 
+        </p>
+            <p class="highlight">Jake Sheeran/ Section Lead Volnteer</p>
+    </div>
+    <div class="image">
+            <img src="{{ url_for('static', filename='images/scouts/craft.jpg')}}" alt="Scouts doing an activity (Stock Scout Image)" width="75%">
+    </div>
+</div>
+
+
+{% include "helpful.html" %}
+{% endblock %}

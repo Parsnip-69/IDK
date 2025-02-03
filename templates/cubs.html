@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block css %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/cubs.css')}}">
+{% endblock %}
+
+{% block content %}
+
+<div class="welcome-section">
+  <div class="image">
+      <img src="{{ url_for('static', filename='images/cubs/gettingHelp.jpg')}}" alt="Beavers doing an activity while being helped by young leaders (Stock Scout Image)" width="75%">
+  </div>
+  <div class="content">
+      <h1>Discover the <br><span>Cubs' Adventure</span></h1>
+      <p class="description">
+       Missing the Cubs description
+    </p>
+      <p class="highlight">Jill Beckingham/ Section Lead Volnteer</p>
+  </div>
+</div>
+
+{% include "helpful.html" %}
+{% endblock %}

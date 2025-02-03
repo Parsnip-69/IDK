@@ -10,5 +10,13 @@ def index():
 def beavers():
     return render_template('beavers.html')
 
+@app.route('/cubs')
+def cubs():
+    return render_template('cubs.html')
+
+@app.route('/scouts')   
+def scouts():
+    return render_template('scouts.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
