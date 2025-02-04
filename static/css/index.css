@@ -174,7 +174,7 @@ h2{
   border:3px solid #006ddf;
   width: 100%;
   height: auto;
-  border-radius: 20vh;
+  border-radius: 2.5vh;
 }
 
 .beavers:hover {
@@ -185,7 +185,7 @@ h2{
   border: 3px solid #23a950;
   width: 100%;
   height: auto;
-  border-radius: 20vh;
+  border-radius: 2.5vh;
 }
 
  .cubs:hover {
@@ -196,7 +196,7 @@ h2{
   border: 3px solid #004851;
   width: 100%;
   height: auto;
-  border-radius: 20vh;
+  border-radius: 2.5vh;
 }
 
 .scouts:hover {
