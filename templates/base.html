@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4th East Grinstead</title>
-    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/Logo.png')}}">
+    <title>4th EG {% block title %}Scout Group{% endblock %}</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/general/favicon.png')}}">
 
     <!--General CSS-->
     <link rel="stylesheet" href="{{url_for('static', filename='css/general.css')}}">
