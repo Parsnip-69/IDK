@@ -75,22 +75,30 @@ nav ul {
     padding: 0;
     list-style-type: none;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    overflow: hidden;
   }
 
   nav ul li:hover ul {
     display: block;
+    border: none;
   }
 
-  nav ul li ul li {
+  nav ul li ul li a {
     display: block;
-    padding: 8px 16px;
+    padding: 1% 1.5%;
     color: black;
+    font-weight: normal;
+    font-size: normal;
   }
 
   nav ul li ul li:hover {
     background-color: #f1f1f1;
   }
 
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
 @media (max-width: 768px) {
     nav ul li {
         font-size: medium;
@@ -129,9 +137,3 @@ footer h3{
     margin-top: 2%;
 }
 
-/*Section Image*/
-.hero{
-    width: 100%;
-    border-bottom: 4.5px solid #9d9d9d;
-}
-  

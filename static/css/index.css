@@ -202,3 +202,8 @@ h2{
 .scouts:hover {
   border: 5px solid #004851;
 }
+
+.hero{
+  width: 100%;
+  border-bottom: 0.5vh solid #9d9d9d;
+}

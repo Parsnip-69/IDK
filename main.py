@@ -6,6 +6,15 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+
+@app.route('/trustee')
+def trustee():
+    return render_template('trustee.html')
+
+@app.route('/squirrels')
+def squirrels():
+    return render_template('squirrels.html')
+
 @app.route('/beavers')
 def beavers():
     return render_template('beavers.html')

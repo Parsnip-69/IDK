@@ -23,18 +23,21 @@
           <div class="col">
                 <nav>
                 <ul>
-                  <li>Home</li>
+                  <li><a href="{{ url_for('index') }}">Home</a></li>
                   <li>About Us
-                  <ul>
-                    <li>Our History</li>
-                    <li>Our Leaders</li>
-                  </ul>
+                <ul>
+                    <li><a href="#">Our History</a></li>
+                    <li><a href="{{ url_for('trustee') }}">Trustee Board</a></li>
+                    <li><a href="#">Documents</a></li>
+                    <li><a href="#">Badges</a></li>
+                </ul>
                   </li>
                   <li>Sections
                   <ul>
-                    <li>Beavers</li>
-                    <li>Cubs</li>
-                    <li>Scouts</li>
+                    <li><a href="{{ url_for('squirrels') }}">Squirrels</a></li>
+                    <li><a href="{{ url_for('beavers') }}">Beavers</a></li>
+                    <li><a href="{{ url_for('cubs') }}">Cubs</a></li>
+                    <li><a href="{{ url_for('scouts') }}">Scouts</a></li>
                   </ul>
                   </li>
                   <li>Join Us</li>
@@ -42,7 +45,7 @@
                 </nav>
           </div>
           <div class="col">
-            <img src="{{ url_for('static', filename='images/general/navbar_logo.png')}}" width="30%">
+            <a href="{{ url_for('index')}}"><img src="{{ url_for('static', filename='images/general/navbar_logo.png')}}" width="30%"></a>
           </div>
   </header>
     {% block content %}
@@ -61,7 +64,7 @@
               <div class="col">
                 <a href=""><img src="{{url_for('static', filename='images/general/footer_logo.png')}}" alt="Scout Logo" width="40%"></a>
                 <h4 class="Contact">Contact Us:</h4>
-                <a href=""><h6>Billy Davis & Owen Jones</h6></a>
+                <a href="mailto:glv4theg@gmail.com"><h6>Billy Davis & Owen Jones</h6></a>
               </div>
               <div class="col">
                 <h3>Meeting Location</h3>

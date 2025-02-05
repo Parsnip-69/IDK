@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block css %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/squirrels.css')}}">
+{% endblock %}
+
+{% block content %}
+
+<div class="welcome-section">
+  <div class="image">
+        <br>
+        <img src="{{ url_for('static', filename='images/squirrels/planting.jpg')}}" alt="Beavers doing an activity while being helped by young leaders (Stock Scout Image)" width="75%">
+  </div>
+  <div class="content">
+      <h1>Help the <br><span>Squirrels' Drey</span></h1>
+      <p class="description">
+        We are currently looking for volunteers, if you know of anyone who would either like to support or run this section for the age range of <span>4 to 6 years old</span>. All we ask of our leader is to have enthusiasm to run a fun and exciting section for the young people. 
+        <br> <br>
+        Please email <a href="mailto:glv4theg@gmail.com">Billy Davis & Owen Jones</a> for more information. 
+        </p>
+  </div>
+</div>
+{% endblock %}
