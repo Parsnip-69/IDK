@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helpful</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/Logo.png')}}">
+
+
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+      *{
+          margin: 0;
+          padding: 0;
+          font-family: "Nunito Sans", serif;
+      }
+
+      body{
+        background-color: #eeeeee;
+      }
+    </style>
+
+    <!--Bootstrap Links-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+  <center>
+    <hr>
+    <h2 style="font-weight: bolder; margin-bottom: 1%;">Archive AGMs</h2>
+  </center>
+  <div class="container text-center">
+    <div class="row align-items-center">
+      <div class="col">
+        <a href="{{ url_for('static', filename='documents/documents/archive/AGM Minutes - 2023.pdf')}}"><img src="{{ url_for('static', filename='images/general/pdf.png')}}" width="25%"></a>
+        <h3>2023 - AGM</h3>
+      </div>
+    </div>
+  </div>
+</body>

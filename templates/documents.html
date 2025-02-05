@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% block title %} - Documents{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/documents.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="whitespace">
+    <h1>Documents</h1>
+    <br>
+    <p>Below are the relevant documents for our group. These documents include our behaviour ploicy, the start pack and a draft of the minutes of our most recent AGM. We maintain all documents below at their most current versions. Soon to be added to on this page will be our risk assessments.</p>
+    <br>
+    <h2>Welcome Pack</h2>
+    <div class="container">
+        <div class="text-container">
+            <p>
+                We have created a document that contains all the information necessary for new starters; 
+                which includes information regarding meeting times, the section leaders, safety information, 
+                and uniforms.
+            </p>
+        </div>
+        <div class="object-container">
+            <object data="{{ url_for('static', filename='documents/documents/InformationPack.pdf') }}" type="application/pdf">
+                <div class="error">
+                    <p>
+                        Unfortunately, the PDF document hasn't loaded properly. Just follow the link: 
+                        <a href="{{ url_for('static', filename='documents/documents/InformationPack.pdf') }}" target="_blank">
+                            Click here to download the PDF file.
+                        </a>
+                    </p>
+                </div>
+            </object>
+        </div>
+    </div>
+    <br><br>
+
+    
+    <h2>Behaviour Policy</h2>
+    <div class="container">
+        <div class="object-container">
+            <object data="{{ url_for('static', filename='documents/documents/BehaviourPolicy.pdf') }}" type="application/pdf">
+                <div class="error">
+                    <p>
+                        Unfortunately, the PDF document hasn't loaded properly. Just follow the link: 
+                        <a href="{{ url_for('static', filename='documents/documents/BehaviourPolicy.pdf') }}" target="_blank">
+                            Click here to download the PDF file.
+                        </a>
+                    </p>
+                </div>
+            </object>
+        </div>
+        <div class="text-container">
+            <p>
+                Our group's behavior policy, which outlines expected conduct for your young person during regular meetings, events, and camps. This is a rarely referred to document but is a necessary produre for our leaders to follow and for parents/ guardians to know about.
+            </p>
+        </div>
+    </div>
+    <br><br>
+
+
+    <h2>Draft AGM Minutes - 2024</h2>
+    <div class="container">
+        <div class="text-container">
+            <p>
+                The draft minutes of our most recent Annual General Meeting (AGM) held in 2024. These minutes are subject to change and will be approved at the next AGM. These's an archive of the minutes of previous AGMs that can be viewed below.
+            </p>
+            <button class="button" id="archivebutton" onclick="archive()">Archive</button>
+            <button class="button" id="currentbutton" onclick="back()">Current</button>
+        </div>
+        <div class="object-container">
+            <object data="{{ url_for('static', filename='documents/documents/AGM Minutes - 2024.pdf') }}" id="AGM" type="application/pdf">
+                <div class="error">
+                    <p>
+                        Unfortunately, the PDF document hasn't loaded properly. Just follow the link: 
+                        <a href="{{ url_for('static', filename='documents/documents/AGM Minutes - 2024.pdf') }}" target="_blank">
+                            Click here to download the PDF file.
+                        </a>
+                    </p>
+                </div>
+            </object>
+            <div id="Archive">
+                <iframe src="/archive" width="600vh" height="300vh"></iframe>
+                <div class="container text-center">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <button class="back" onclick="history.back()">Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function archive() {
+        document.getElementById("Archive").style.display = "block";
+        document.getElementById("AGM").style.display = "none";
+        document.getElementById("archivebutton").style.display = "none";
+        document.getElementById("currentbutton").style.display = "block";
+    }
+
+    function back() {
+        document.getElementById("Archive").style.display = "none";
+        document.getElementById("AGM").style.display = "block";
+        document.getElementById("archivebutton").style.display = "block";
+        document.getElementById("currentbutton").style.display = "none";
+    }
+</script>
+{% endblock %}
