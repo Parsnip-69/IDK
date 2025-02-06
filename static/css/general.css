@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #eeeeee;
+    background-color: #f8f8f8 !important;
     max-width: 100% !important;
     overflow-x: hidden !important;
     -webkit-touch-callout: none;

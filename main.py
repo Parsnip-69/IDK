@@ -15,6 +15,10 @@ def trustee():
 def documents():
     return render_template('documents.html')
 
+@app.route('/badges')
+def badges():
+    return render_template('badges.html')
+
 @app.route('/squirrels')
 def squirrels():
     return render_template('squirrels.html')
