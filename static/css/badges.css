@@ -18,14 +18,14 @@ h2{
 }
 
 .enlarge{
-    margin-top: 5%;
+    margin-top: 2.5%;
     color: red;
     font-size: small;
     text-align: right;
 }
 
 .dropdown{
-    margin-top: 1%;
+    margin-top: 2.5%;
     color: red;
     font-size: small;
     text-align: right;
@@ -124,4 +124,14 @@ embed{
     .modal-content {
       width: 100%;
     }
+  }
+
+  ul{
+    font-size: large;
+    margin-left: 5%;
+  }
+
+  li{
+    font-size: large;
+    margin-left: 5%;
   }

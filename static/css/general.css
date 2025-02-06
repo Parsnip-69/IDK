@@ -88,7 +88,7 @@ nav ul {
     padding: 1% 1.5%;
     color: black;
     font-weight: normal;
-    font-size: normal;
+    font-size: smaller;
   }
 
   nav ul li ul li:hover {

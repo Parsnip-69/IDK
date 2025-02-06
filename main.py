@@ -6,7 +6,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-
+#About Us
 @app.route('/trustee')
 def trustee():
     return render_template('trustee.html')
@@ -23,6 +23,7 @@ def badges():
 def squirrels():
     return render_template('squirrels.html')
 
+#Sections
 @app.route('/beavers')
 def beavers():
     return render_template('beavers.html')
@@ -35,9 +36,14 @@ def cubs():
 def scouts():
     return render_template('scouts.html')
 
+#Other Pages
 @app.route('/archive')
 def archive():
     return render_template('archive.html')
+
+@app.route('/additional')
+def additional():
+    return render_template('additional.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
