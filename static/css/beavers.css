@@ -62,3 +62,25 @@
     border-right: 0.1px solid #ececec;
     border-top: 0.1px solid #eaeaea;
 }
+
+
+
+@media (max-width: 768px) {
+    .welcome-section {
+        flex-direction: column; /* Stack content and image vertically */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center text */
+    }
+
+    .image {
+        order: 1; /* Optional: Move the image above the text */
+    }
+
+    .content h1 {
+        text-align: center;
+    }
+
+    .description {
+        text-align: center;
+    }
+}

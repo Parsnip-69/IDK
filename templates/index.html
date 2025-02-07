@@ -10,7 +10,13 @@
 
 {% block content %}
 <!--Top Banner -->
-<img src="{{ url_for('static', filename='images/index/banner.jpg')}}" alt="A yellow triangle on a purple background" class="hero" , oncontextmenu="return false;"> 
+<div class="columns">
+    <div class="box"><img src="{{ url_for('static', filename='images/hero/fire.jpg')}}" class="hero_angle"></div>
+    <div class="box"><img src="{{ url_for('static', filename='images/hero/shogun.jpg')}}" class="hero_angle"></div>
+    <div class="box large"><img src="{{ url_for('static', filename='images/hero/necker.png')}}" style="border: none;"></div>
+    <div class="box"><img src="{{ url_for('static', filename='images/hero/cubs.jpg')}}" class="hero_angle_inverted"></div>
+    <div class="box"><img src="{{ url_for('static', filename='images/hero/archery.jpg')}}" class="hero_angle_inverted"></div>
+</div>
 
 <!--Section 1-->
 <div class="white-block">

@@ -211,7 +211,81 @@ h2{
   border: 5px solid #004851;
 }
 
-.hero{
+.hero {
   width: 100%;
   border-bottom: 0.5vh solid #9d9d9d;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 17.5% 17.5% 30% 17.5% 17.5%; /* Custom column sizes */
+  width: 100%;
+  background-color: #7413dc;
+  padding: 10px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2vh;
+}
+
+.box img {
+  width: auto;
+  height: 25vh; /* Fixed height for consistency */
+  object-fit: cover;
+  border: 0.5vh solid white;
+  border-radius: 0.5vh;
+}
+
+/* 🔹 Updated Necker Image Styling */
+.large {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.large img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* 🔹 Image Rotations */
+.hero_angle {
+  transform: rotate(10deg);
+}
+
+.hero_angle_inverted {
+  transform: rotate(-10deg);
+}
+
+/* 🔹 Responsive Design */
+
+/* 🖥️ Tablets (1024px and below) */
+@media (max-width: 1024px) {
+  .columns {
+      grid-template-columns: 40% 60%; /* 2-column layout, making necker bigger */
+  }
+
+  .box img {
+      height: 20vh; /* Slightly smaller images */
+  }
+}
+
+/* 📱 Mobile Phones (600px and below) */
+@media (max-width: 600px) {
+  .columns {
+      grid-template-columns: 1fr; /* Stack everything in 1 column */
+  }
+
+  .box img {
+      height: auto; /* Let images resize naturally */
+      max-width: 90%; /* Prevents images from being too large */
+  }
+
+  .large img {
+      max-width: 80%; /* Scale down necker slightly */
+  }
 }
