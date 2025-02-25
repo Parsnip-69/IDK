@@ -36,6 +36,10 @@ def cubs():
 def scouts():
     return render_template('scouts.html')
 
+@app.route('/join')
+def join():
+    return render_template('join.html')
+
 #Other Pages
 @app.route('/archive')
 def archive():

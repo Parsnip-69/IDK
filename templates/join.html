@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %} - Join Us{% endblock %}
+
+
+{% block css %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/join.css')}}">
+{% endblock %}
+
+
+{% block content %}
+  <div class="welcome-section">
+    <div class="content">
+        <h1>Considering <br><span>Joining??</span></h1>
+        <p class="description">
+          Consider joining 4th East Grinstead Scout Group. We offer a wide range of activities and opportunities for young people. <br><br> <span>Why not? </span>Join the waiting list, have a conversation with our membership secrectary and let your young person try out to see if they like it.
+        </p>
+        <p class="highlight"></p>
+    </div>
+    <div class="image">
+        <img src="{{ url_for('static', filename='images/hero/fire.jpg')}}" alt="Beavers doing an activity while being helped by young leaders (Stock Scout Image)" width="75%">
+    </div>
+  </div>
+
+  <div class="rating">
+    <div class="container text-center">
+      <div class="row align-items-center">
+        <div class="col">
+          <h1 style="color: darkcyan;">95%</h1>
+          <h2>After leaving scouts, return as YLs<br>Since 2021</h2>
+        </div>
+        <div class="col">
+          <h1 style="color: darkcyan;">75%</h1>
+          <h2>YLs become Adult Volunteers<br>Since 2019</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+<h1 class="title">Waiting List - Form</h1>
+
+  
+{% endblock %}
