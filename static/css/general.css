@@ -24,9 +24,6 @@ body{
     touch-action: pan-y;
 }
 
-
-
-/**/
 p {
     margin-top: 7.5%;
     margin-bottom: 2.5%;
@@ -42,8 +39,8 @@ header {
     color: white;
     padding: 1vh;
     text-align: center;
-    position: relative; /* Ensure header is part of the stacking context */
-    z-index: 10; /* Set higher stacking context */
+    position: relative; 
+    z-index: 10;
 }
 
 nav ul {
@@ -52,9 +49,16 @@ nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    position: relative; /* Establish stacking context for nav */
+    position: relative;
     z-index: 10;
 }
+
+nav ul li a span {
+    margin-left: 1.25vh; 
+    position: relative;  
+    top: -0.35vh; 
+}
+
 
 nav ul li {
     display: inline-block;
@@ -64,37 +68,48 @@ nav ul li {
     border-right: 1px solid white;
     border-left: 1px solid white;
     padding: 1vh 2vh;
-    position: relative; /* Required for dropdown positioning */
+    position: relative; 
 }
 
 nav ul li ul {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 100%; 
+    left: 50%; 
+    transform: translateX(-50%); 
     background-color: white;
     padding: 0;
     list-style-type: none;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 20; /* Ensure dropdown overlays properly */
-    overflow: hidden;
-    min-width: 200px; /* Prevent narrow dropdowns */
+    z-index: 20;
+    min-width: 175px; 
+    width: max-content; 
+    max-width: 250px; 
+    text-align: center; 
+    overflow: hidden; 
 }
 
 nav ul li:hover ul {
     display: block;
 }
 
+nav ul li ul li {
+    width: 95%; 
+}
+
 nav ul li ul li a {
     display: block;
-    padding: 1% 1.5%;
+    padding: 0.5vh;
     color: black;
     font-weight: normal;
     font-size: smaller;
+    white-space: nowrap; 
+    width: 95%; 
+    box-sizing: border-box; 
 }
 
 nav ul li ul li:hover {
-    background-color: #f1f1f1;
+    background-color: #e7e7e7;
 }
 
 nav a {
@@ -102,7 +117,13 @@ nav a {
     text-decoration: none;
 }
 
+/* Mobile adjustments */
 @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
     nav ul li {
         font-size: medium;
         margin: 0.5vh 1%;
@@ -110,9 +131,10 @@ nav a {
     }
 
     nav ul li ul {
-        position: static; /* Allow dropdown to stack properly */
+        position: absolute; /* Keeps dropdown aligned on mobile */
     }
 }
+
 
 
 /* Footer */

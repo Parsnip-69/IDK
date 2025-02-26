@@ -102,3 +102,35 @@
         font-size: 14px;
     }
 }
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+}
+
+.scroll-container figure {
+    flex: 0 0 auto;
+    text-align: center;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    background: #fff;
+    scroll-snap-align: start;
+}
+
+.scroll-container img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+}
+
+figcaption {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
