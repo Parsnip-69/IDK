@@ -265,27 +265,38 @@ h2{
 
 /* 🖥️ Tablets (1024px and below) */
 @media (max-width: 1024px) {
-  .columns {
-      grid-template-columns: 40% 60%; /* 2-column layout, making necker bigger */
-  }
+  .large img {
+    margin: auto;
+    max-width: 80%;
+}
+.columns {
+  grid-template-columns: 1fr;
+}
 
-  .box img {
-      height: 20vh; /* Slightly smaller images */
-  }
 }
 
 /* 📱 Mobile Phones (600px and below) */
 @media (max-width: 600px) {
   .columns {
-      grid-template-columns: 1fr; /* Stack everything in 1 column */
+      grid-template-columns: 1fr;
   }
 
   .box img {
-      height: auto; /* Let images resize naturally */
-      max-width: 90%; /* Prevents images from being too large */
+      height: auto; 
+      max-width: 90%; 
   }
 
   .large img {
-      max-width: 80%; /* Scale down necker slightly */
+      max-width: 80%; 
+  }
+}
+
+@media (max-width: 1111px) {  
+  .hero_angle {
+    display: none;
+  }
+  
+  .hero_angle_inverted {
+    display: none;
   }
 }
