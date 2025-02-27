@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %} - About Us{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/about.css')}}">
+{% endblock %}
+
+{% block content %}
+<h1>About Us</h1>
+<br>
+<p>This is our about page. This contains buttons to pages such as our History and Group's Documents/ Policies</p>
+
+<div class="container text-center">
+    <div class="row align-items-end">
+        <div class="col">
+            <div class="button-border" onclick="location.href='{{ url_for('history') }}';" style="cursor:pointer;">
+                <img src="{{ url_for('static', filename='images/about/history.png')}}" alt="History">
+                <br><br>
+                <h4>Our History</h4>
+            </div>
+        </div>
+        <div class="col">
+            <div class="button-border" onclick="location.href='{{ url_for('trustee') }}';" style="cursor:pointer;">
+                <img src="{{ url_for('static', filename='images/about/trustee.png')}}" alt="Trustee Board">
+                <br><br>
+                <h4>Trustee Board</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center">
+    <div class="row align-items-end">
+        <div class="col">
+            <div class="button-border" onclick="location.href='{{ url_for('documents') }}';" style="cursor:pointer;">
+                <img src="{{ url_for('static', filename='images/about/documents.png')}}" alt="Documents">
+                <br><br>
+                <h4>Documents</h4>
+            </div>
+        </div>
+        <div class="col">
+            <div class="button-border" onclick="location.href='{{ url_for('badges') }}';" style="cursor:pointer;">
+                <img src="https://prod-cms.scouts.org.uk/media/1555/membership-award.png" alt="MemberShip Badge">
+                <br><br>
+                <h4>Badges</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

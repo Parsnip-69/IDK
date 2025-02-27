@@ -65,10 +65,10 @@ nav ul li {
     margin: 0.5vh 2%;
     font-size: larger;
     font-weight: bolder;
-    border-right: 1px solid white;
-    border-left: 1px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
     padding: 1vh 2vh;
-    position: relative; 
+    position: relative;
 }
 
 nav ul li ul {
@@ -87,6 +87,7 @@ nav ul li ul {
     max-width: 250px; 
     text-align: center; 
     overflow: hidden; 
+    border-radius: 1.5vh;
 }
 
 nav ul li:hover ul {
@@ -110,6 +111,7 @@ nav ul li ul li a {
 
 nav ul li ul li:hover {
     background-color: #e7e7e7;
+    border-radius: 1.5vh;
 }
 
 nav a {
@@ -171,3 +173,29 @@ footer h3{
 .whitespace{
     padding: 4.5vh 12.5%;
 }
+
+
+#navimg{
+    width: 35%;
+}    
+
+@media (max-width: 992px) {
+    #navimg{
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    #navimg{
+        width: 75%;
+    }
+
+    #size{
+        display: none;
+    }
+}
+
+#notdis{
+    display: none;
+}
+

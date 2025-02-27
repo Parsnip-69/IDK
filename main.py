@@ -3,11 +3,16 @@ import send_email as email
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def index():
     return render_template('index.html')
 
 #About Us
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
 @app.route('/history')
 def history():
     return render_template('history.html')
@@ -23,6 +28,10 @@ def documents():
 @app.route('/badges')
 def badges():
     return render_template('badges.html')
+
+@app.route('/sections')
+def sections():
+    return render_template('sections.html')
 
 @app.route('/squirrels')
 def squirrels():
@@ -54,6 +63,11 @@ def archive():
 def additional():
     return render_template('additional.html')
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
+
+#Sending Email
 @app.route('/send')
 def send():
     email.send_email()

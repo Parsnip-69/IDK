@@ -24,7 +24,7 @@
             <nav>
               <ul>
                 <li><a href="{{ url_for('index') }}">Home</a></li>
-                <li><a href="">About Us<span><i class="fa fa-sort-down"></i></span></a>
+                <li><a href="{{ url_for('about') }}">About Us<span><i class="fa fa-sort-down"></i></span></a>
                   <ul>
                     <li><a href="{{ url_for('history') }}">Our History</a></li>
                     <li><a href="{{ url_for('trustee') }}">Trustee Board</a></li>
@@ -46,9 +46,10 @@
             
           </div>
           <div class="col">
-            <a href="{{ url_for('index')}}"><img src="{{ url_for('static', filename='images/general/navbar_logo.png')}}" width="30%"></a>
+            <a href="{{ url_for('index')}}"><img src="{{ url_for('static', filename='images/general/navbar_logo.png')}}" id="navimg"></a>
           </div>
   </header>
+  
     {% block content %}
     <h1>Something's Wrong</h1>    
     {% endblock %}
@@ -56,12 +57,12 @@
     <footer>
         <div class="container text-center">
             <div class="row align-items-center">
-              <div class="col">
-                <h3>Useful Links</h3>
-                <a href=""><h6>Site Map</h6></a>
-                <a href=""><h6>Legal Information</h6></a>
-                <a href="{{ url_for('additional')}}"><h6>Additional Links</h6></a>
-              </div>
+                <div class="col" id="size">
+                  <h3>Useful Links</h3>
+                  <a href=""><h6>Site Map</h6></a>
+                  <a href=""><h6>Legal Information</h6></a>
+                  <a href="{{ url_for('additional')}}"><h6>Additional Links</h6></a>
+                </div>
               <div class="col">
                 <a href="{{ url_for('index') }}"><img src="{{url_for('static', filename='images/general/footer_logo.png')}}" alt="Scout Logo" width="40%"></a>
                 <h4 class="Contact">Contact Us:</h4>
@@ -86,7 +87,7 @@
                   <div class="col">
                     <h6>4th East Grinstead Scout Group</h6>
                   </div>
-                  <div class="col">
+                  <div class="col" id="size">
                     <h6>May the 4th, be with You</h6>
                   </div>
                 </div>
