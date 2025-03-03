@@ -74,4 +74,4 @@ def send():
     return redirect('http://www.onlinescoutmanager.co.uk/waiting-list/4th-east-grinstead-waiting-list/6789a6e2-d7e4-4342-ad3f-70bd71993ccd/apply')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
