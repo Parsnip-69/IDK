@@ -1,8 +1,30 @@
-from flask import Flask, render_template, request, redirect, url_for, session, jsonify
+from flask import Flask, render_template, request, redirect, url_for, session, Response
 import send_email as email
 
 app = Flask(__name__)
+app.secret_key = "your_secret_key"  # Required for session management
 
+# Hardcoded credentials (for demonstration)
+USERNAME = "Scouts"
+PASSWORD = "4thEG"
+
+def check_auth(username, password):
+    """Check if the entered username and password match the correct credentials."""
+    return username == USERNAME and password == PASSWORD
+
+def authenticate():
+    """Send a 401 response that triggers the browser's login prompt."""
+    return Response(
+        "Authentication required", 401,
+        {"WWW-Authenticate": 'Basic realm="Login Required"'}
+    )
+
+@app.before_request
+def check_login():
+    """Run before every request to enforce authentication."""
+    auth = request.authorization
+    if not auth or not check_auth(auth.username, auth.password):
+        return authenticate()  # Prompt login if authentication fails
 
 @app.route('/')
 def index():
