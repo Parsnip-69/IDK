@@ -28,6 +28,7 @@ td, th {
     border-radius: 1.5vh;
 }
 
+
 tr:nth-child(odd) {
     background-color: #fefefe;
 }
