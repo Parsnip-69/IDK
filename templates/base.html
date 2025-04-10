@@ -55,44 +55,44 @@
     {% endblock %}
     
     <footer>
-        <div class="container text-center">
-            <div class="row align-items-center">
-                <div class="col" id="size">
-                  <h3>Useful Links</h3>
-                  <a href=""><h6>Site Map</h6></a>
-                  <a href=""><h6>Legal Information</h6></a>
-                  <a href="{{ url_for('additional')}}"><h6>Additional Links</h6></a>
-                </div>
-              <div class="col">
-                <a href="{{ url_for('index') }}"><img src="{{url_for('static', filename='images/general/footer_logo.png')}}" alt="Scout Logo" width="40%"></a>
-                <h4 class="Contact">Contact Us:</h4>
-                <a href="mailto:glv4theg@gmail.com"><h6>Billy Davis & Owen Jones</h6></a>
-              </div>
-              <div class="col">
-                <h3>Meeting Location</h3>
-                <h6>Trinity Methodist Church,</h6>
-                <h6>Lingfield Rd,</h6>
-                <h6>East Grinstead,</h6>
-                <h6>RH19 2HA</h6>
-              </div>
+      <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col" id="size">
+            <h3>Useful Links</h3>
+            <a href="" id="Gap"><h6>Site Map</h6></a>
+            <a href="" id="Gap"><h6>Legal Information</h6></a>
+            <a href="{{ url_for('additional')}}"><h6>Additional Links</h6></a>
+            
+          </div>
+          <div class="col">
+            <a href="{{ url_for('index') }}"><img src="{{url_for('static', filename='images/general/footer_logo.png')}}" alt="Scout Logo" width="35%"></a>
+            <h4 class="Contact">Contact Us:</h4>
+            <a href="mailto:glv4theg@gmail.com"><h6>Billy Davis & Owen Jones</h6></a>
+          </div>
+          <div class="col">
+            <h3>Meeting Location</h3>
+            <h6>Trinity Methodist Church,</h6>
+            <h6>Lingfield Rd,</h6>
+            <h6>East Grinstead,</h6>
+            <h6>RH19 2HA</h6>
+          </div>
+        </div>
+      </div>
+      <div id="footerbottom">
+        <div class="container text-last" >
+          <div class="row align-items-last">
+            <div class="col">
+              <h6>Registered charity number: <a href="https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/305851" target="_blank" rel="noopener noreferrer">305851</a></h6>
+            </div>
+            <div class="col">
+              <h6>4th East Grinstead Scout Group</h6>
+            </div>
+            <div class="col" id="size">
+              <h6>May the 4th, be with You</h6>
             </div>
           </div>
-
-          <div style="background-color: #6310BB; padding: 0.25%;">
-            <div class="container text-center">
-                <div class="row align-items-center">
-                  <div class="col">
-                    <h6>Registered charity number: <a href="https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/charity-details/305851" target="_blank" rel="noopener noreferrer">305851</a></h6>
-                  </div>
-                  <div class="col">
-                    <h6>4th East Grinstead Scout Group</h6>
-                  </div>
-                  <div class="col" id="size">
-                    <h6>May the 4th, be with You</h6>
-                  </div>
-                </div>
-              </div>
-          </div>
+        </div>
+        </div>
     </footer>
 
 </body>
