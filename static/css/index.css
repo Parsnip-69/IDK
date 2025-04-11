@@ -25,59 +25,43 @@ h2{
 }
 
 /*Buttons*/
-.BPbutn:link, .BPbutn:visited {
-    background-color: #00a794;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    width:90%;
-    border-radius: 1vh;
-    border:4.5px solid #fff;
-    font-size: 20px;
-  }
-  
-  .BPbutn:hover, .BPbutn:active {
-    width: 100%;
-    border:6px solid #fff;
-  }
-  
-  .AUbutn:link, .AUbutn:visited {
-    background-color: #ffb4e5;
-    color: #565656;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    width:90%;
-    border-radius: 1vh;
-    border:4.5px solid #fff;
-    font-size: 20px;
-    font-weight: bolder;
-  }
-  
-  .AUbutn:hover, .AUbutn:active {
-    width: 100%;
-    border:6px solid #fff;
-  }
-  
-  .Sbutn:link, .Sbutn:visited {
-    background-color: #7413dc;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    width:90%;
-    border-radius: 1vh;
-    border:4.5px solid #fff;
-    font-size: 20px;
-  }
-  .Sbutn:hover, .Sbutn:active {
-    width: 100%;
-    border:6px solid #fff;
-  }
+/* General button styling */
+.custom-button {
+  width: 85%;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 1.5vh;
+  background-color: white;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  margin-bottom: 5%;
+}
+
+/* Hover effect */
+.custom-button:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+  text-decoration: none;
+}
+
+/* Individual color accents for brand identity */
+.young-leaders {
+  border-left: 1.5vh solid #7413dc;
+}
+
+.badge-placement {
+  border-left: 1.5vh solid #00a794;
+}
+
+.about-us {
+  border-left: 1.5vh solid #ffb4e5;
+}
 
 /*Page Divider*/
 
@@ -120,6 +104,7 @@ h2{
 
 .colour-block h2 {
     text-shadow: 1px 2px 3px #f9a93080 ;
+    font-size: xx-large;
 }
   
 .white-block {
@@ -131,6 +116,7 @@ h2{
 
 .white-block h2 {
     text-shadow: 1px 2px 3px #0A378680;
+    font-size: xx-large;
 }
   
 @media only screen and (max-width: 1000px) {
@@ -176,40 +162,6 @@ h2{
   opacity: 1;
 }
 
-
-/*Section Buttons*/
-.beavers {
-  border:3px solid #006ddf;
-  width: 100%;
-  height: auto;
-  border-radius: 2.5vh;
-}
-
-.beavers:hover {
-  border: 5px solid #006ddf;
-}
-
-.cubs {
-  border: 3px solid #23a950;
-  width: 100%;
-  height: auto;
-  border-radius: 2.5vh;
-}
-
- .cubs:hover {
-  border: 5px solid #23a950;
-}
-
-.scouts {
-  border: 3px solid #004851;
-  width: 100%;
-  height: auto;
-  border-radius: 2.5vh;
-}
-
-.scouts:hover {
-  border: 5px solid #004851;
-}
 
 .hero {
   width: 100%;
@@ -299,4 +251,36 @@ h2{
   .hero_angle_inverted {
     display: none;
   }
+}
+
+
+.button {
+  border-bottom: 0.1px solid #eeeeee; 
+  border-left: 0.1px solid #ececec;
+  border-right: 0.1px solid #ececec;
+  border-top: 0.1px solid #eaeaea;
+  width: 85%;
+  padding: 2.5%;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 1.5vh; 
+  background-color: #fff; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: all 0.3s ease;
+  margin-bottom: 5%;
+}
+
+.button:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45); 
+  transform: translateY(-5px); 
+}
+
+.button img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
