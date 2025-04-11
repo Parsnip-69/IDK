@@ -24,14 +24,14 @@ h1{
     width: 5px;
     height: 100%;
     background: rgb(8,132,134);
-    background: linear-gradient(180deg, rgba(8,132,134,1) 50%, #ffb4e5 50%);
+    background: linear-gradient(180deg, rgba(8,132,134,1) 24%, #ffb4e5 25%);
     z-index: -1;
     transform: translateX(-50%);
 }
 
 .timeline-item {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 5vh;
     width: 100%;
     display: flex;
     justify-content: flex-start;
