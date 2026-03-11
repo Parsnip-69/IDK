@@ -26,8 +26,11 @@ body {
 
 /* Paragraph styling */
 p {
-    margin: 7.5% 5% 2.5%;
-    font-size: x-large;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #555;
+    text-align: center;
 }
 
 /* Navbar styling */
@@ -38,6 +41,7 @@ header {
     text-align: center;
     position: relative;
     z-index: 10;
+    
 }
 
 nav ul {
