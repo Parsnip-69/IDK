@@ -138,28 +138,24 @@ h2{
 }
 
 /*Javascript*/
+.fromleft,
 .fromright {
-  position: relative;
-  right: -100%;
   opacity: 0;
-  transition: right 0.75s ease-out, opacity 0.75s ease-out;
-}
-
-.fromright.active {
-  right: 0;
-  opacity: 1;
+  transition: all 1.2s ease;
 }
 
 .fromleft {
-  position: relative;
-  left: -100%;
-  opacity: 0;
-  transition: left 0.75s ease-out, opacity 0.75s ease-out;
+  transform: translateX(-100px);
 }
 
-.fromleft.active {
-  left: 0;
+.fromright {
+  transform: translateX(100px);
+}
+
+.fromleft.active,
+.fromright.active {
   opacity: 1;
+  transform: translateX(0);
 }
 
 

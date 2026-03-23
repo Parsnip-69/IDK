@@ -1,22 +1,21 @@
 function handleScroll() {
-  const elementsToAnimate = document.querySelectorAll('.fromleft, .fromright');
-  const windowHeight = window.innerHeight;
-  const elementVisible = 150;
-
-  elementsToAnimate.forEach((element) => {
-      const elementTop = element.getBoundingClientRect().top;
-
-      if (elementTop < windowHeight - elementVisible && !element.classList.contains('active')) {
-          // If the element is within the visible part of the viewport
-          // and hasn't been animated yet, add the 'active' class
-          element.classList.add('active');
+  const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        observer.unobserve(entry.target); // animate only once
       }
-  });
+    });
+  },
+  {
+    threshold: 0.1, // triggers when 10% visible
+  }
+);
 
-
-  if (document.querySelectorAll('.fromleft:not(.active), .fromright:not(.active)').length === 0) {
-      window.removeEventListener('scroll', handleScroll);
-    } 
+document.querySelectorAll('.fromleft, .fromright').forEach((el) => {
+  observer.observe(el);
+});
   }
 
 handleScroll();
